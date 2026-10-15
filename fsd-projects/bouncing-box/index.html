@@ -60,7 +60,7 @@
         }
 
         // changes the text displayed on the Box
-        function changeBoxText(newText) {
+        function changeBoxText(newTetx) {
           box.text(newText);
         }
 
@@ -86,6 +86,7 @@
         moveBoxTo(boardWidth); // Moves box to right edge
        positionX = positionX + 10;
       //  also can be positionX += 10 
+      moveBoxTo(PositionX)
       
 
 
@@ -103,6 +104,8 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
+          positionX = 0;
+          changeBoxText(0);
 
 
 
